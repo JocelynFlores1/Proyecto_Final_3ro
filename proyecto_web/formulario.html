@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html>   
+<head> 
+      <font color="FF00FF" face="Comic Sans MS,arial">
+    <font size='9'><h1 align="center"><title><i>Productos</i></title></h1></font>
+    </font>
+    <meta charset="utf-8" />  
+
+    <style type="text/css">
+    #formulario{
+            width: 380px;
+            height: 700px;
+            font-family: Arial;
+            font-size: 12px;
+            background-color:#FFCCFF;
+            margin: 10em;
+            margin-left: 10em;
+        }
+         #estilo{
+            width: 350px;
+            height: 130px;
+            font-family: Arial;
+            font-size: 12px;
+            background-color: #FFCCFF ;
+            float: left;
+            text-align: center;
+            margin: 9em;
+            margin-left: 30em;
+        }
+         #eliminar{
+            width: 350px;
+            height: 130px;
+            font-family: Arial;
+            font-size: 12px;
+            background-color: #FFCCFF ;
+            float: left;
+            text-align: center;
+            margin: 9em;
+            margin-left: 30em;
+        }
+        </head>
+    </style>
+    <body background="cosmeticos1.jpg" width="1000" height="800" opacity=0.5></body>  
+    <div id ="formulario">
+    <form name="guardar" action="conctar.php" method="post"> </form>
+    <table borde="0">
+        <tr>
+        <td><h2>Idproducto:</h2></td>
+        <td>
+            <input type="text" name="txtIdproducto"/>
+            </td>
+            </tr>
+        <tr>
+        <td><h2>Nombre producto:</h2></td>
+        <td>
+            <input type="text" name="txtNombreproducto"/>
+            </td>
+            </tr>
+        <tr>
+        <td><h2>Marca producto</h2></td>
+        <td>
+            <input type="text" name="txtMarcaproducto"/>
+            </td>
+            </tr>
+        <tr>
+        <td><h2>Contenido</h2></td>
+        <td>
+            <input type="text" name="txtContenido"/>
+            </td>
+            </tr>
+        <tr>
+        <td><h2>Color</h2></td>
+        <td>
+            <input type="text" name="txtColor"/>
+            </td>
+            </tr>
+        <tr>
+        <td><h2>Talla</h2></td>
+        <td>
+            <input type="text" name="txtTalla"/>
+            </td>
+            </tr>
+        <tr>
+        <td><h2>Existencias</h2></td>
+        <td>
+            <input type="text" name="txtExistencias"/>
+            </td>
+            </tr>
+        <tr>
+        <td><h2>Lote</h2></td>
+        <td>
+            <input type="text" name="txtLote"/>
+            </td>
+            </tr>
+        <tr>
+        <td><h2>Fecha ingreso</h2></td>
+        <td>
+            <input type="text" name="txtFechadeingreso"/>
+            </td>
+            </tr>
+        <tr>
+        <td><h2>Precio Compra</h2></td>
+        <td>
+            <input type="text" name="txtPrecioCompra"/>
+            </td>
+            </tr>
+        <tr>
+        <td><h2>Precio Venta:</h2></td>
+        <td>
+            <input type="text" name="txtPrecioVenta"/>
+            </td>
+            </tr>
+        <tr>
+        <td><h2>Idproveedor:</h2></td>
+        <td>
+            <input type="text" name="txtIdproveedor"/>
+            </td>
+            </tr>
+    </table>
+    
+     <td colspan="2">   
+    <div id ="eliminar">
+    <form method="post" action="eliminar.php">
+            Eliminar   :<input type="Text" name="nombre"><br><br>
+            <input type="Submit" name="eliminacion">
+        </form>
+        </div>
+        
+    <td colspan="2">
+    <div id ="estilo">
+    <form name="guardar" action="buscar.php"
+        method="post"> 
+    <table borde="0">
+        <tr>
+        <td><center><h2>Buscar</h2></center></td>
+        <td>
+            <input type="text" name="txtIdproducto"/>
+            </td>
+            </tr>
+    </table>
+        
+    <td colspan="2"> 
+<input type="submit" name="btnBuscar" value="Buscar" >
+    
+        </td>
+        </form>
+        </div></body>
+</html>
+     
